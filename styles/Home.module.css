@@ -4,11 +4,11 @@
 
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 2rem ;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -28,9 +28,11 @@
   flex-grow: 1;
 }
 
+
 .title a {
   color: #0070f3;
   text-decoration: none;
+  
 }
 
 .title a:hover,
@@ -42,7 +44,7 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .title,
@@ -51,9 +53,9 @@
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
+  line-height: 1rem;
   font-size: 1.5rem;
+  max-width: 40vw;
 }
 
 .code {
@@ -126,4 +128,62 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.mainnav ul {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.mainnav ul li {
+  margin: 10px 20px;
+  font-weight: bold;
+  list-style: none;
+}
+
+.imagewrap {
+  padding: 20px 0px;
+  margin-bottom: 20px;
+}
+
+.myimg {
+  border-radius: 20px;
+}
+
+
+.subheading {
+  font-size: 32px;
+  text-decoration: underline;
+}
+
+.blogItem {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.button {
+  padding:    10px;
+  background: #63a2ff;
+  color:      white;
+  border-radius:     20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #040442;
+}
+
+@media (max-width: 600px){
+  .mainnav ul li {
+    margin: 5px 10px;
+    font-weight: bold;
+    list-style: none;
+  }
+  
 }
